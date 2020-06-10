@@ -24,14 +24,13 @@ public class TargetSignin {
     @FindBy(how = How.XPATH, xpath = "//div[text()=\"That password is incorrect\"]")
     WebElement invalidPassErr;
 
-
     public void enterUsername(String user){
 
         username.sendKeys(user);
     }
     public void enterUserpass(String pass){
 
-        username.sendKeys(pass);
+        userpass.sendKeys(pass);
     }
     public void clickSignin(){
         signBtn.click();

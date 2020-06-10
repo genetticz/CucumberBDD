@@ -24,7 +24,7 @@ public class LoginSteps extends ApplicationPageBase{
     @When("^user enters incorrect email$")
     public void user_enters_incorrect_email() {
         // Write code here that turns the phrase above into concrete actions
-        targetSignin.enterUsername("testuser@login.com");
+        targetSignin.enterUsername("testuser@gmail.com");
     }
 
     @When("^user does not enter input in password field$")
@@ -50,7 +50,7 @@ public class LoginSteps extends ApplicationPageBase{
     @Then("^user signs enter incorrect password$")
     public void user_signs_enter_incorrect_password()  {
         // Write code here that turns the phrase above into concrete actions
-        targetSignin.enterUserpass("password");
+        targetSignin.enterUserpass("Password!@");
     }
 
     @Then("^There should be an error, and user should not be granted access$")
